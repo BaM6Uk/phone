@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+android:background="@drawable/bg"
+    android:backgroundTint="#858F7F00"
+    android:backgroundTintMode="src_atop">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart House"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/block"
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/block"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_alignTop="@id/block"
+        android:layout_alignLeft="@id/block"
+        android:layout_alignRight="@id/block"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_below="@id/edit_email"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@id/edit_email"
+        android:layout_alignRight="@id/edit_email"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="Enter Your House"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:backgroundTint="@color/cyan"
+        android:layout_below="@id/block"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/GoToReg"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="New Resident"
+        android:layout_alignStart="@id/Login"
+        android:layout_alignEnd="@id/Login"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:backgroundTint="@color/darkblue"
+        android:layout_below="@id/Login"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.home.SettingsFragment">
+    <include layout="@layout/topbar2"/>
+
+    <ImageView
+        android:id="@+id/pfp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/pfpplaceholder"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/usernametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_alignBottom="@id/edit_username1"
+        android:layout_alignLeft="@id/edit_username1"
+        android:layout_marginBottom="45dp"/>
+
+    <EditText
+    android:id="@+id/edit_username1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="16"
+    android:layout_below="@id/pfp"
+    android:layout_marginTop="80dp"
+    android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/mailtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_alignBottom="@id/edit_email1"
+        android:layout_alignLeft="@id/edit_email1"
+        android:layout_marginBottom="45dp"/>
+
+    <EditText
+        android:id="@+id/edit_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:layout_below="@id/edit_username1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/phonetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_alignBottom="@id/edit_phone1"
+        android:layout_alignLeft="@id/edit_phone1"
+        android:layout_marginBottom="45dp"/>
+
+    <EditText
+        android:id="@+id/edit_phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:layout_below="@id/edit_email1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/gendertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_alignBottom="@id/edit_gender1"
+        android:layout_alignLeft="@id/edit_gender1"
+        android:layout_marginBottom="45dp"/>
+
+    <EditText
+        android:id="@+id/edit_gender1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:layout_below="@id/edit_phone1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dobtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:layout_alignBottom="@id/edit_dob1"
+        android:layout_alignLeft="@id/edit_dob1"
+        android:layout_marginBottom="45dp"/>
+
+    <EditText
+        android:id="@+id/edit_dob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:layout_below="@id/edit_gender1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/SignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:textColor="#FF1020"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"/>
+
+
+</RelativeLayout>
